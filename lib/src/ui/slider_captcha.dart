@@ -243,7 +243,7 @@ class _SliderCaptchaState extends State<SliderCaptcha>
     if (isLock) return;
     isLock = true;
 
-    if (_offsetMove < answerX + 10 && _offsetMove > answerX - 10) {
+    if (_offsetMove < answerX + 35 && _offsetMove > answerX - 35) {
       await widget.onConfirm?.call(true);
     } else {
       await widget.onConfirm?.call(false);
